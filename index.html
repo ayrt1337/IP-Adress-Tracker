@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Address Tracker</title>
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@400;800&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@300;400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assests/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+<body>
+    <main>
+        <section class="header before">
+            <section class="search">
+                <p id="tittle-before">IP Address Tracker</p>
+
+                <section class="input-search">
+                    <input type="text" placeholder="Search for any IP address or domain" id="input">
+                    <img src="./assests/images/icon-arrow.svg" alt="" id="btn" height="55">
+                </section>
+            </section>
+
+            <section class="output naoMostrar">
+                <section class="ip">
+                    <p class="tittle">IP ADDRESS</p>
+                    <p class="info-output" id="ip"></p>
+                </section>
+
+                <section class="location">
+                    <p class="tittle">LOCATION</p>
+                    <p class="info-output" id="location"></p>
+                </section>
+
+                <section class="timezone">
+                    <p class="tittle">TIMEZONE</p>
+                    <p class="info-output" id="timezone"></p>
+                </section>
+
+                <section class="isp">
+                    <p class="tittle">ISP</p>
+                    <p class="info-output" id="isp"></p>
+                </section>
+            </section>
+        </section>
+
+        <div id="map">
+            
+        </div>
+    </main>
+    <script type="text/Javascript" src="./assests/js/index.js"></script>
+</body>
+</html>
